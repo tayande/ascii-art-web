@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII RESULT</title>
+</head>
+<body>
+    <h1>Result</h1>
+    <br><br>
+    {{if .Result}}
+    <pre>{{.Result}}</pre>
+    <a href="http://localhost:8080/ascii-art-switch?text={{.Text}}&banner=standard" class="active">Standard</a>
+    <a href="http://localhost:8080/ascii-art-switch?text={{.Text}}&banner=shadow" class="active">Shadow</a>
+    <a href="http://localhost:8080/ascii-art-switch?text={{.Text}}&banner=thinkertoy" class="active">Thinkertoy</a>
+    {{end}}
+    <br><br>
+    <button onclick="history.back()">go back</button>
+</body>
+</html>
